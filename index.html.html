@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<!-- index.html · Кешбэк — ноябрь 2026 · Евгений + Анастасия -->
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)">
+<meta name="robots" content="noindex, nofollow">
+<title>Кешбэк — ноябрь 2026</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link href="https://cdn.jsdelivr.net/fontsource/css/manrope@latest/400.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/fontsource/css/manrope@latest/500.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/fontsource/css/manrope@latest/600.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/fontsource/css/manrope@latest/700.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/fontsource/css/fraunces@latest/variable.css" rel="stylesheet">
+<style>
+:root{--bg:#f6f3ec;--card:#ffffff;--text:#1c1a17;--muted:#7c7669;--gold:#9a6b14;--gold-bg:#f3e5c3;--line:#e7e1d4;--chip:#efe9dc}
+@media (prefers-color-scheme: dark){:root{--bg:#121110;--card:#1d1b18;--text:#f2efe8;--muted:#9b948a;--gold:#d9a441;--gold-bg:#3a2f14;--line:#2c2a26;--chip:#262420}}
+html[data-theme="dark"]{--bg:#121110;--card:#1d1b18;--text:#f2efe8;--muted:#9b948a;--gold:#d9a441;--gold-bg:#3a2f14;--line:#2c2a26;--chip:#262420}
+html[data-theme="light"]{--bg:#f6f3ec;--card:#ffffff;--text:#1c1a17;--muted:#7c7669;--gold:#9a6b14;--gold-bg:#f3e5c3;--line:#e7e1d4;--chip:#efe9dc}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Manrope',system-ui,sans-serif;background:var(--bg);color:var(--text);
+padding:calc(env(safe-area-inset-top,0px) + 20px) calc(env(safe-area-inset-right,0px) + 16px) calc(env(safe-area-inset-bottom,0px) + 28px) calc(env(safe-area-inset-left,0px) + 16px)}
+.wrap{max-width:760px;margin:0 auto}
+h1{font-family:'Fraunces',serif;font-size:34px;line-height:1.1;margin:0 0 6px}
+.sub{color:var(--muted);margin:0 0 18px;font-size:14px}
+.top{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;margin-bottom:22px}
+.tcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}
+.tcard .rate{font-size:22px}
+.tabs{display:flex;gap:8px;margin:0 0 14px}
+.tabs button{font:inherit;padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--muted);cursor:pointer}
+.tabs button.on{background:var(--text);color:var(--bg);border-color:var(--text);font-weight:600}
+.owners{margin:0 0 18px}
+.owners button{font-weight:600}
+.owners button.on{background:var(--gold);border-color:var(--gold);color:#fff}
+.panel{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+#chips{display:contents}
+.chip{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--text);font:inherit;font-size:13px;cursor:pointer}
+.chip.off{opacity:.45;text-decoration:line-through}
+input[type=search]{flex:1;min-width:160px;padding:10px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--text);font:inherit}
+input[type=search]:focus{outline:2px solid var(--gold);border-color:transparent}
+.sec{margin:0 0 18px}
+.sec h2{font-family:'Fraunces',serif;font-size:20px;margin:0 0 10px}
+.card{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px 14px;margin-bottom:8px}
+.card.best{background:var(--gold-bg);border-color:var(--gold)}
+.logo{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex:none;font-size:16px}
+.meta{flex:1;min-width:0}
+.n{font-weight:600;font-size:15px}
+.c{color:var(--muted);font-size:12.5px;margin-top:2px}
+.rate{font-family:'Fraunces',serif;font-size:20px;font-weight:700;color:var(--gold);white-space:nowrap}
+.tag{display:inline-block;margin-left:6px;padding:2px 8px;border-radius:999px;background:var(--chip);color:var(--muted);font-size:11px;font-weight:600}
+.bankhead{display:flex;align-items:center;gap:10px;margin:18px 0 10px}
+.bankhead .logo{width:44px;height:44px;font-size:18px}
+.bankhead .n{font-family:'Fraunces',serif;font-size:19px}
+.empty{color:var(--muted);font-size:14px;padding:8px 2px}
+footer{margin-top:26px;color:var(--muted);font-size:12px;line-height:1.5;border-top:1px solid var(--line);padding-top:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>Кешбэк в ноябре</h1>
+<p class="sub">Где и сколько возвращают в этом месяце. Обновлено 5 ноября 2026.</p>
+</header>
+<nav class="tabs owners" aria-label="Владелец карт">
+<button id="oEv" class="on" type="button">Евгений</button>
+<button id="oAn" type="button">Анастасия</button>
+</nav>
+<section id="top" class="top" aria-label="Топ-6 предложений месяца"></section>
+<nav class="tabs">
+<button id="tCat" class="on" type="button">По категориям</button>
+<button id="tBank" type="button">По банкам</button>
+</nav>
+<div class="panel">
+<div id="chips"></div>
+<input id="q" type="search" placeholder="Поиск: магазин, категория, банк" autocomplete="off">
+</div>
+<main id="out"></main>
+<footer>Данные взяты из скриншотов банковских приложений. Проценты и лимиты уточняйте в приложении банка. Яндекс: кешбэк в баллах Плюса.</footer>
+</div>
+<script>
+(function(){
+"use strict";
+var S={
+ tb:{n:'Т-Банк',s:'Т',bg:'#FFDD2D',fg:'#111',info:{ev:'Выплата кешбэка 19-го числа на основной счёт',an:'Повышенный кэшбэк в ноябре'}},
+ oz:{n:'Ozon Банк',s:'O',bg:'#005BFF',fg:'#fff',info:{ev:'Кешбэк копится до 19 ноября; 2% на всё — только по кредитной карте',an:''}},
+ al:{n:'Альфа-Банк',s:'А',bg:'#EF3124',fg:'#fff',info:{ev:'Категории ноября и Суперкешбэк',an:''}},
+ yp:{n:'Яндекс Пэй',s:'Я',bg:'#FC3F1D',fg:'#fff',info:{ev:'Карта Пэй, баллы Плюса',an:'Карта Пэй, баллы Плюса; до 10 000 баллов в месяц'}},
+ yr:{n:'Яндекс Про',s:'Я',bg:'#111',fg:'#FFD21E',info:{ev:'Карта Про, баллы Плюса; до 10 000 баллов в месяц',an:''}},
+ sb:{n:'Сбербанк',s:'С',bg:'#21A038',fg:'#fff',info:{ev:'Категории ноября действуют со СберПрайм',an:'Категории ноября'}}
+};
+var G=['🛒 Продукты','🍔 Кафе и фастфуд','🚕 Транспорт','⛽ Топливо','👶 Дети','💊 Аптеки и медицина','👕 Одежда и обувь','🏠 Дом и авто','✈️ Путешествия','💻 Цифровые товары','🎁 Акции недели','🏷️ Все покупки','💄 Красота и косметика','🛍️ Маркетплейсы'];
+var D=[
+ {b:'oz',g:11,n:'Все покупки',r:2,t:'только по кредитной карте'},
+ {b:'oz',g:4,n:'Товары для детей',r:5},
+ {b:'oz',g:0,n:'ГЛОБУС',r:7},
+ {b:'oz',g:5,n:'СберЗдоровье Анализы',r:30},
+ {b:'tb',g:11,n:'Все покупки',r:1},
+ {b:'tb',g:5,n:'Анализы в Городе',r:15,t:'партнёр'},
+ {b:'tb',g:7,n:'Автоуслуги',r:3},
+ {b:'tb',g:2,n:'Такси',r:5},
+ {b:'al',g:0,n:'Дикси Доставка',r:20},
+ {b:'al',g:12,n:'М.Косметик',r:23},
+ {b:'al',g:1,n:'Кафе и рестораны',r:2},
+ {b:'yp',g:3,n:'Яндекс Заправки',r:3},
+ {b:'yp',g:1,n:'Яндекс Еда и Деливери',r:-50},
+ {b:'yp',g:0,n:'Супермаркеты',r:3,t:'онлайн и на кассе'},
+ {b:'yp',g:1,n:'Кафе, бары и рестораны',r:5,t:'онлайн и на кассе'},
+ {b:'yp',g:2,n:'Яндекс Такси',r:5,t:'Комфорт, Комфорт+ и Ultima'},
+ {b:'yr',g:1,n:'Кафе и рестораны',r:3,t:'онлайн и на кассе'},
+ {b:'yr',g:6,n:'Одежда и обувь',r:3,t:'онлайн и на кассе'},
+ {b:'yr',g:5,n:'Аптеки',r:3,t:'онлайн и на кассе'},
+ {b:'yr',g:5,n:'Медицина',r:3,t:'онлайн и на кассе'},
+ {b:'yr',g:0,n:'Супермаркеты',r:2,t:'онлайн и на кассе'},
+ {b:'yr',g:2,n:'Ж/Д транспорт',r:2,t:'онлайн и на кассе'},
+ {b:'sb',g:11,n:'Все покупки',r:1,t:'по дебетовой карте, со СберПрайм'},
+ {b:'sb',g:3,n:'АЗС',r:4,t:'со СберПрайм'},
+ {b:'sb',g:5,n:'Медицинские услуги',r:2,t:'со СберПрайм'},
+ {b:'sb',g:2,n:'Такси и каршеринг',r:5,t:'со СберПрайм'},
+ {b:'sb',g:4,n:'Товары для детей',r:5,t:'со СберПрайм'},
+ {b:'sb',g:11,n:'Все покупки',r:0.5,t:'при оплате дебетовой картой',o:'an'},
+ {b:'sb',g:5,n:'Аптеки',r:3,o:'an'},
+ {b:'sb',g:0,n:'Супермаркеты',r:2,o:'an'},
+ {b:'tb',g:0,n:'Пятёрочка в Городе',r:17,t:'партнёр',o:'an'},
+ {b:'tb',g:5,n:'Аптеки',r:5,o:'an'},
+ {b:'tb',g:0,n:'Супермаркеты',r:3,o:'an'},
+ {b:'tb',g:13,n:'Маркетплейсы',r:3,o:'an'},
+ {b:'yp',g:10,n:'Алиса Плюс',r:100,t:'Свои Плюсы этой недели',p:1,o:'an'},
+ {b:'yp',g:5,n:'СберЗдоровье',r:22,o:'an'},
+ {b:'yp',g:11,n:'Все покупки',r:2,t:'онлайн и на кассе',o:'an'},
+ {b:'yp',g:0,n:'Супермаркеты',r:5,t:'онлайн и на кассе',o:'an'},
+ {b:'yp',g:1,n:'Кафе, бары и рестораны',r:5,t:'онлайн и на кассе',o:'an'},
+ {b:'yp',g:0,n:'Бристоль',r:12,t:'партнёр Плюса',o:'an'}
+];
+var on={},tab='cat',q='',owner='ev';
+function $(s){return document.querySelector(s)}
+function fmt(r){return (r<0?'\u2212'+Math.abs(r):r)+'%'}
+function logo(b){return '<span class="logo" style="background:'+S[b].bg+';color:'+S[b].fg+'">'+S[b].s+'</span>'}
+function sorted(a){return a.slice().sort(function(x,y){return y.r-x.r})}
+function own(d){return d.o||'ev'}
+function banksOfOwner(){return Object.keys(S).filter(function(b){return D.some(function(d){return own(d)===owner&&d.b===b})})}
+function items(){return D.filter(function(d){return own(d)===owner&&!on[d.b]}).filter(function(d){if(!q)return true;return (d.n+' '+G[d.g]+' '+S[d.b].n).toLowerCase().indexOf(q)>-1})}
+function card(d,best,byBank){
+ var sub=byBank?G[d.g]:S[d.b].n;
+ return '<div class="card'+(best?' best':'')+'">'+logo(d.b)+
+ '<div class="meta"><div class="n">'+d.n+(d.p?'<span class="tag">акция</span>':'')+'</div>'+
+ '<div class="c">'+sub+(d.t?' · '+d.t:'')+'</div></div>'+
+ '<div class="rate">'+fmt(d.r)+'</div></div>';
+}
+function renderTop(){
+ var t=sorted(items().filter(function(d){return !d.p})).slice(0,6);
+ $('#top').innerHTML=t.map(function(d){
+  return '<div class="tcard"><div class="rate">'+fmt(d.r)+'</div><div class="c">'+d.n+'</div><div class="c">'+S[d.b].n+'</div></div>';
+ }).join('');
+}
+function render(){
+ var list=items(),h='';
+ if(tab==='cat'){
+  G.forEach(function(g,i){
+   var arr=sorted(list.filter(function(d){return d.g===i}));
+   if(!arr.length)return;
+   var bestSet=false;
+   h+='<section class="sec"><h2>'+g+'</h2>';
+   h+=arr.map(function(d){var best=!d.p&&!bestSet;if(!d.p)bestSet=true;return card(d,best,false)}).join('');
+   h+='</section>';
+  });
+  if(!h)h='<p class="empty">Ничего не найдено.</p>';
+ }else{
+  banksOfOwner().forEach(function(b){
+   if(on[b])return;
+   var arr=sorted(list.filter(function(d){return d.b===b}));
+   var info=S[b].info[owner]||'';
+   h+='<div class="bankhead">'+logo(b)+'<div class="meta"><div class="n">'+S[b].n+'</div>'+(info?'<div class="c">'+info+'</div>':'')+'</div></div>';
+   h+=arr.length?arr.map(function(d){return card(d,false,true)}).join(''):'<p class="empty">Ничего не найдено.</p>';
+  });
+ }
+ $('#out').innerHTML=h;
+}
+function chips(){
+ $('#chips').innerHTML=banksOfOwner().map(function(b){
+  return '<button type="button" class="chip'+(on[b]?' off':'')+'" data-b="'+b+'">'+S[b].n+'</button>';
+ }).join('');
+}
+function renderAll(){renderTop();render()}
+function setOwner(w){
+ owner=w;on={};q='';$('#q').value='';
+ $('#oEv').classList.toggle('on',w==='ev');
+ $('#oAn').classList.toggle('on',w==='an');
+ chips();renderAll();
+}
+$('#chips').addEventListener('click',function(e){
+ var c=e.target.closest('.chip');if(!c)return;
+ var b=c.getAttribute('data-b');on[b]=!on[b];chips();renderAll();
+});
+$('#q').addEventListener('input',function(e){q=e.target.value.trim().toLowerCase();renderAll()});
+$('#tCat').addEventListener('click',function(){tab='cat';$('#tCat').classList.add('on');$('#tBank').classList.remove('on');render()});
+$('#tBank').addEventListener('click',function(){tab='bank';$('#tBank').classList.add('on');$('#tCat').classList.remove('on');render()});
+$('#oEv').addEventListener('click',function(){setOwner('ev')});
+$('#oAn').addEventListener('click',function(){setOwner('an')});
+chips();renderAll();
+})();
+</script>
+</body>
+</html>
