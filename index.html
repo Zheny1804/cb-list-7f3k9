@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<!-- index.html · Кешбэк — ноябрь 2026 · Евгений + Анастасия -->
+<!DOCTYPE html>
+<!-- index.html · Кешбэк — ноябрь 2026 · Евгений + Анастасия + Елена Анатольевна · обновлено 12.11.2026 -->
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -31,7 +31,7 @@ h1{font-family:'Fraunces',serif;font-size:34px;line-height:1.1;margin:0 0 6px}
 .tabs{display:flex;gap:8px;margin:0 0 14px}
 .tabs button{font:inherit;padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--muted);cursor:pointer}
 .tabs button.on{background:var(--text);color:var(--bg);border-color:var(--text);font-weight:600}
-.owners{margin:0 0 18px}
+.owners{margin:0 0 18px;flex-wrap:wrap}
 .owners button{font-weight:600}
 .owners button.on{background:var(--gold);border-color:var(--gold);color:#fff}
 .panel{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
@@ -61,11 +61,12 @@ footer{margin-top:26px;color:var(--muted);font-size:12px;line-height:1.5;border-
 <div class="wrap">
 <header>
 <h1>Кешбэк в ноябре</h1>
-<p class="sub">Где и сколько возвращают в этом месяце. Обновлено 5 ноября 2026.</p>
+<p class="sub">Где и сколько возвращают в этом месяце. Обновлено 12 ноября 2026.</p>
 </header>
 <nav class="tabs owners" aria-label="Владелец карт">
 <button id="oEv" class="on" type="button">Евгений</button>
 <button id="oAn" type="button">Анастасия</button>
+<button id="oEl" type="button">Елена Анатольевна</button>
 </nav>
 <section id="top" class="top" aria-label="Топ-6 предложений месяца"></section>
 <nav class="tabs">
@@ -83,14 +84,14 @@ footer{margin-top:26px;color:var(--muted);font-size:12px;line-height:1.5;border-
 (function(){
 "use strict";
 var S={
- tb:{n:'Т-Банк',s:'Т',bg:'#FFDD2D',fg:'#111',info:{ev:'Выплата кешбэка 19-го числа на основной счёт',an:'Повышенный кэшбэк в ноябре'}},
- oz:{n:'Ozon Банк',s:'O',bg:'#005BFF',fg:'#fff',info:{ev:'Кешбэк копится до 19 ноября; 2% на всё — только по кредитной карте',an:''}},
- al:{n:'Альфа-Банк',s:'А',bg:'#EF3124',fg:'#fff',info:{ev:'Категории ноября и Суперкешбэк',an:''}},
- yp:{n:'Яндекс Пэй',s:'Я',bg:'#FC3F1D',fg:'#fff',info:{ev:'Карта Пэй, баллы Плюса',an:'Карта Пэй, баллы Плюса; до 10 000 баллов в месяц'}},
- yr:{n:'Яндекс Про',s:'Я',bg:'#111',fg:'#FFD21E',info:{ev:'Карта Про, баллы Плюса; до 10 000 баллов в месяц',an:''}},
- sb:{n:'Сбербанк',s:'С',bg:'#21A038',fg:'#fff',info:{ev:'Категории ноября действуют со СберПрайм',an:'Категории ноября'}}
+ tb:{n:'Т-Банк',s:'Т',bg:'#FFDD2D',fg:'#111',info:{ev:'Выплата кешбэка 19-го числа на основной счёт',an:'Повышенный кэшбэк в ноябре',el:'Карты Black и Платинум'}},
+ oz:{n:'Ozon Банк',s:'O',bg:'#005BFF',fg:'#fff',info:{ev:'Кешбэк копится до 19 ноября; 2% на всё — только по кредитной карте',an:'',el:''}},
+ al:{n:'Альфа-Банк',s:'А',bg:'#EF3124',fg:'#fff',info:{ev:'Категории ноября и Суперкешбэк',an:'',el:'Категории ноября; транспорт — до 5 000 баллов'}},
+ yp:{n:'Яндекс Пэй',s:'Я',bg:'#FC3F1D',fg:'#fff',info:{ev:'Карта Пэй, баллы Плюса',an:'Карта Пэй, баллы Плюса; до 10 000 баллов в месяц',el:''}},
+ yr:{n:'Яндекс Про',s:'Я',bg:'#111',fg:'#FFD21E',info:{ev:'Карта Про, баллы Плюса; до 10 000 баллов в месяц',an:'',el:''}},
+ sb:{n:'Сбербанк',s:'С',bg:'#21A038',fg:'#fff',info:{ev:'Категории ноября действуют со СберПрайм',an:'Категории ноября',el:''}}
 };
-var G=['🛒 Продукты','🍔 Кафе и фастфуд','🚕 Транспорт','⛽ Топливо','👶 Дети','💊 Аптеки и медицина','👕 Одежда и обувь','🏠 Дом и авто','✈️ Путешествия','💻 Цифровые товары','🎁 Акции недели','🏷️ Все покупки','💄 Красота и косметика','🛍️ Маркетплейсы'];
+var G=['🛒 Продукты','🍔 Кафе и фастфуд','🚕 Транспорт','⛽ Топливо','👶 Дети',' Аптеки и медицина',' Одежда и обувь',' Дом и авто','✈️ Путешествия','💻 Цифровые товары','🎁 Акции недели','🏷️ Все покупки','💄 Красота и косметика','🛍️ Маркетплейсы','📚 Книги и канцтовары','🐾 Животные'];
 var D=[
  {b:'oz',g:11,n:'Все покупки',r:2,t:'только по кредитной карте'},
  {b:'oz',g:4,n:'Товары для детей',r:5},
@@ -131,7 +132,14 @@ var D=[
  {b:'yp',g:11,n:'Все покупки',r:2,t:'онлайн и на кассе',o:'an'},
  {b:'yp',g:0,n:'Супермаркеты',r:5,t:'онлайн и на кассе',o:'an'},
  {b:'yp',g:1,n:'Кафе, бары и рестораны',r:5,t:'онлайн и на кассе',o:'an'},
- {b:'yp',g:0,n:'Бристоль',r:12,t:'партнёр Плюса',o:'an'}
+ {b:'yp',g:0,n:'Бристоль',r:12,t:'партнёр Плюса',o:'an'},
+ {b:'tb',g:11,n:'Все покупки',r:1,t:'карты Black и Платинум',o:'el'},
+ {b:'tb',g:14,n:'Книги и канцтовары',r:5,o:'el'},
+ {b:'tb',g:12,n:'Красота',r:5,o:'el'},
+ {b:'tb',g:0,n:'Супермаркеты',r:5,o:'el'},
+ {b:'al',g:2,n:'Транспорт',r:7,t:'до 5 000 баллов',o:'el'},
+ {b:'al',g:5,n:'Аптеки',r:3,o:'el'},
+ {b:'al',g:15,n:'Животные',r:5,o:'el'}
 ];
 var on={},tab='cat',q='',owner='ev';
 function $(s){return document.querySelector(s)}
@@ -187,6 +195,7 @@ function setOwner(w){
  owner=w;on={};q='';$('#q').value='';
  $('#oEv').classList.toggle('on',w==='ev');
  $('#oAn').classList.toggle('on',w==='an');
+ $('#oEl').classList.toggle('on',w==='el');
  chips();renderAll();
 }
 $('#chips').addEventListener('click',function(e){
@@ -198,6 +207,7 @@ $('#tCat').addEventListener('click',function(){tab='cat';$('#tCat').classList.ad
 $('#tBank').addEventListener('click',function(){tab='bank';$('#tBank').classList.add('on');$('#tCat').classList.remove('on');render()});
 $('#oEv').addEventListener('click',function(){setOwner('ev')});
 $('#oAn').addEventListener('click',function(){setOwner('an')});
+$('#oEl').addEventListener('click',function(){setOwner('el')});
 chips();renderAll();
 })();
 </script>
